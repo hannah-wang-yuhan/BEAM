@@ -1,0 +1,39 @@
+.upload-photo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.upload-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  font-size: 40px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.uploaded-photo {
+  width: 100%;
+  max-width: 300px; /* Limit the image size to 300px */
+  height: auto;
+  overflow: hidden;
+}
+
+.uploaded-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensure the image retains its aspect ratio */
+}
+
+.file-input {
+  display: none; /* Hide the file input element */
+}
+

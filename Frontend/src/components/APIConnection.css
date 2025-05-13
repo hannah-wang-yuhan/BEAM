@@ -1,0 +1,46 @@
+.api-connection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .big-submit-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .big-submit-button.loading {
+    background-color: #ffa3b1;
+  }
+  
+  .big-submit-button.success {
+    background-color: #4caf50;
+    color: white;
+    font-size: 48px;
+  }
+  
+  .spinner-icon {
+    animation: spin 1s linear infinite;
+    width: 48px;
+    height: 48px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  

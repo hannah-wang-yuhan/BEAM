@@ -1,0 +1,76 @@
+.api-results {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-top: 5vh;
+  padding-bottom: 15vh;
+  box-sizing: border-box;
+}
+
+.result-card {
+  width: 60vw;
+  height: 40vh;
+  background-color:beige;
+  border: 2px solid #D4AF97;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #D4AF97;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.result-item {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* 重点修改的部分 */
+.card-tabs-bottom {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.card-tab {
+  padding: 10px 16px;
+  background-color:beige;
+  color: #D4AF97;
+  border: 1px solid #D4AF97;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-tab:hover {
+  background-color: beige;
+  transform: translateY(-2px);
+}
+
+.card-tab.active {
+  background-color: #D4AF97;
+  color: white;
+}
+

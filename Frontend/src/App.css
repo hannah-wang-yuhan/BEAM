@@ -1,0 +1,95 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  height: 10%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  color: #3B3B3B;
+}
+
+header .logo {
+  width: 50px; /* 调整 logo 的大小 */
+  height: auto;
+  margin-right: 10px; /* logo 和文字之间的间距 */
+}
+
+header span {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main {
+  height: 90%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  overflow-y: auto;
+  background-color: #fff; 
+}
+
+button {
+  background-color: #D4AF97; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color:beige; /* 亮绿色悬停效果 */
+  color: #3B3B3B;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: #D4AF97; /* 玫瑰金焦点边框 */
+  outline: none;
+}
+
+h2, h3 {
+  color: #333333; /* 深灰色标题 */
+}
+
+.card-tabs button {
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.card-tabs button:hover {
+  background-color:beige; /* 亮绿色悬停效果 */
+}
+
+.card-tabs button.active {
+  background-color: #D4AF97; /* 激活时为玫瑰金色 */
+  color: white;
+}
