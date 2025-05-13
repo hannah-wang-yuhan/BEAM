@@ -34,7 +34,7 @@ Use clear and concise language suitable for a blind user using TTS. When possibl
     image.save(img_byte_arr, format='JPEG')
     img_byte_arr = img_byte_arr.getvalue()
 
-    client = genai.Client(api_key="AIzaSyCrfmrq2SU-9BJEAU40xwpQ6j_3qskzqds")
+    client = genai.Client(api_key="your-own-api")
 
     try:
         response = client.models.generate_content(

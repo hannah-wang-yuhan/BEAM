@@ -12,7 +12,7 @@ def pil_to_bytes(image: Image.Image, format='JPEG') -> bytes:
 async def analyze_facial_makeup(before_img: Image.Image, after_img: Image.Image):
 
     try:
-        client = genai.Client(api_key="AIzaSyCrfmrq2SU-9BJEAU40xwpQ6j_3qskzqds")
+        client = genai.Client(api_key="your-own-api")
 
         prompt = """
 You are a professional makeup analyst. Given a before-makeup and an after-makeup face photo, 
